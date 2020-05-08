@@ -30,8 +30,8 @@ The `firefox_profiles` is object with profile names als fields. For each profile
         extensions:
           - ublock-origin
         preferences:
-		  browser.aboutConfig.showWarning: false
           privacy.donottrackheader.enabled: true
+          browser.aboutConfig.showWarning: false
           privacy.trackingprotection.enabled: true
           signon.rememberSignons: false
           datareporting.healthreport.uploadEnabled: false
