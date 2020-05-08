@@ -26,25 +26,26 @@ The `firefox_profiles` is object with profile names als fields. For each profile
 
   vars:
     firefox_profiles:
-      default:
+      default-release:
         extensions:
           - ublock-origin
         preferences:
-          privacy.donottrackheader.enabled: "true"
-          privacy.trackingprotection.enabled: "true"
-          signon.rememberSignons: "false"
-          datareporting.healthreport.uploadEnabled: "false"
+		  browser.aboutConfig.showWarning: false
+          privacy.donottrackheader.enabled: true
+          privacy.trackingprotection.enabled: true
+          signon.rememberSignons: false
+          datareporting.healthreport.uploadEnabled: false
       bob:
         extensions:
           - adblock-plus
         preferences:
-          privacy.donottrackheader.enabled: "false"
-          privacy.trackingprotection.enabled: "false"
-          signon.rememberSignons: "false"
-          datareporting.healthreport.uploadEnabled: "false"
+          privacy.donottrackheader.enabled: false
+          privacy.trackingprotection.enabled: false
+          signon.rememberSignons: false
+          datareporting.healthreport.uploadEnabled: false
 
   roles:
-     - firefox
+     - ansible-firefox
 ```
 
 ## Credits
