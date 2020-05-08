@@ -47,6 +47,7 @@ The `firefox_profiles` is object with profile names als fields. For each profile
   roles:
      - ansible-firefox
 ```
+Clone into your `$ANSIBLE_ROLES_PATH`
 
 ## Credits
 
