@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  author: basvandenbrink
-  role_name: firefox
-  description: "Create and configure Firefox profiles and download extensions."
+  author: jorp
+  role_name: firefox-addons
+  description: "Create and configure Firefox profiles and download addons."
   license: GPLv2
   min_ansible_version: 2.0
   platforms:
@@ -12,6 +12,9 @@ galaxy_info:
     - system
     - graphical
     - firefox
+    - addons
+    - extensions
     - browser
+    - userjs
     - web
 dependencies: []

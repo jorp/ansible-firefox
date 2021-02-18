@@ -1,7 +1,6 @@
-# Ansible Role: Firefox
+# firefox-addons
 
-Installs firefox and optionally creates profiles with extensions.
-Extensions are installed but need to be manually enabled from firefox.
+Create and configure Firefox profiles and download extensions
 
 ## Requirements
 
@@ -17,7 +16,7 @@ firefox_home: ~/.mozilla/firefox
 
 ### Profile settings
 
-The `firefox_profiles` is object with profile names als fields. For each profile, a list of extension names can be specified under the field `extensions`. These extensions will be installed for that profiles. Secondly, a list of preference key-value pairs can be specified under the field `preferences`. These are also profile-specific and will be put or modified in the `user.js` file of the profile.
+The `firefox_profiles` is object with profile names as fields. For each profile, a list of extension names can be specified under the field `extensions`. These extensions will be installed for that profiles. Secondly, a list of preference key-value pairs can be specified under the field `preferences`. These are also profile-specific and will be put or modified in the `user.js` file of the profile.
 
 ## Example Playbook
 
@@ -45,7 +44,7 @@ The `firefox_profiles` is object with profile names als fields. For each profile
           datareporting.healthreport.uploadEnabled: false
 
   roles:
-     - ansible-firefox
+     - firefox-addons
 ```
 Clone into your `$ANSIBLE_ROLES_PATH`
 
